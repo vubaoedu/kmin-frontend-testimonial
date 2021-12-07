@@ -1,19 +1,21 @@
 :root {
-    --color-primary: hsl(0, 0%, 100%);
-    --color-primary--dark: hsl(0, 0%, 81%);
-    --color-primary--light: hsl(210, 46%, 95%);
-    --color-secondary: hsl(263, 55%, 52%);
-    --color-secondary--dark: hsl(219, 29%, 14%);
-    --color-secondary--light: hsl(217, 19%, 35%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-grey: hsl(0, 0%, 81%);
+    --color-bg: hsl(210, 46%, 95%);
+    --color-violet: hsl(263, 55%, 52%);
+    --color-dark-grey: hsl(219, 29%, 14%);
+    --color-grey: hsl(217, 19%, 35%);
 }
 
 * {
     box-sizing: border-box;
 }
-
+h2, p {
+    margin: 0;
+}
 body {
     min-height: 100vh;
-    background-color: var(--color-primary--light);
+    background-color: var(--color-bg);
     font-size: 1.6rem;
     font-family: 'Barlow Semi Condensed', sans-serif;
     line-height: 1.5;
