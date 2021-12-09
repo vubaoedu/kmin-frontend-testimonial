@@ -1,0 +1,44 @@
+@use '../utils' as *;
+@use '../globals' as *;
+
+// Testimonial Section
+.testimonial {
+    width: 85%;
+    max-width: rem(1200);
+    margin: 0 auto;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+    }
+    
+    &__item {
+        padding: rem(20);
+        border-radius: rem(5);
+        font-size: 0.7em;
+    }
+
+    &__item--violet {
+        @include area(1, 2, 1, 3, var(--color-violet), var(--color-white));
+    }
+    &__item--grey {
+        @include area(1, 2, 3, 4, var(--color-grey), var(--color-white));
+    }
+    &__item--white {
+        @include area(2, 3, 1, 2, var(--color-white));
+    }
+    &__item--dark-grey {
+        @include area(2, 3, 2, 4, var(--color-dark-grey), var(--color-white));
+    }
+    &__item--white-long {
+        @include area(1, 3, 4, 5, var(--color-white));
+    }
+}
+
+// Footer Section
+.footer {
+    margin: rem(30);
+    text-align: center;
+}

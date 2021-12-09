@@ -6,18 +6,3 @@
     --color-dark-grey: hsl(219, 29%, 14%);
     --color-grey: hsl(217, 19%, 35%);
 }
-
-* {
-    box-sizing: border-box;
-}
-h2, p {
-    margin: 0;
-}
-body {
-    min-height: 100vh;
-    background-color: var(--color-bg);
-    font-size: 1.6rem;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    line-height: 1.5;
-}
-  
